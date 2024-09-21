@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 5000;
 
 // CORS configuration to allow requests from localhost:5173 (frontend)
 app.use(cors({
-  origin: 'http://localhost:5173', // Allow only the frontend URL
+  origin: 'https://event-calendar-mocha.vercel.app', // Allow only the frontend URL
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify allowed methods
   credentials: true // Allow cookies if needed
 }));
